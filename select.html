@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+		<title>Judul halaman</title>
+		<link rel="stylesheet" href="select.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<meta name="iewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0"/>
+		
+		<script src="https://kit.fontawesome.com/b9a9bf6e53.js" crossorigin="anonymous"></script>
+		
+		
+</head>
+
+<body onscroll="">
+<div id="lock-orientasi"></div>
+
+<!--
+<div class="slide-box">
+		<div class="slide-open">
+				<img src="image/img3.jpg" alt="">
+				<img src="image/img1.jpg" alt="">
+				<img src="image/img2.jpg" alt="">
+		</div>
+</div>
+-->
+
+<!-- <div id="slideshow">
+   <div>
+     <img src="image/img3.jpg">
+   </div>
+   <div>
+     <img src="image/img2.jpg">
+   </div>
+   <div>
+     <img src="image/img1.jpg">
+   </div>
+</div>
+-->
+
+<nav id="navbar" class="navbar-box">
+		<a id="logo-box" href="#HOME">Putri Angkasa</a>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn" id="checkbtn">HOME <i class="fas fa-bars"></i>
+		</label>
+		
+		<ul id="nav-menu">
+						<li class="nav-list" ><a href="#HOME" class="nav-link active HOME">Home</a></li>
+						<li class="nav-list" ><a href="#ABOUT" class="nav-link ABOUT">About</a></li>
+						<li class="nav-list" ><a href="#MENU" class="nav-link MENU">Menu</a></li>
+						<li class="nav-list" ><a href="#SERVICE" class="nav-link SERVICE">Service</a></li>
+						<li class="nav-list nav-close" onclick="navClose()"><i class="fas fa-times-circle"></i></li>
+		</ul>
+</nav>
+
+
+
+<!-------------- Home ---------- -->
+<section id="HOME" class="_home allMenu">
+		<div class="logo-box">		
+				<img id="logo-Putri_Angkasa" src="20210403_001823.png" alt="">
+		</div>				
+		<h2>"Putri Angkasa"</h2>
+		<p class="home-text">
+				" Dicam mentitum tation scripta noluisse alia ferri expetendis aptent, at option latine felis fabellas at suspendisse ut dui nec risus. "</br>
+				(Since 1990)
+		</p>
+		<div class="home-link">
+				<a href="#">Reservasi</a> &nbsp|&nbsp
+				<a href="#">Catering</a> <!-- &nbsp|&nbsp
+			 <a href="#">Menu</a> -->
+		</div>
+</section>
+
+
+
+<!-- ---------- about ----------- -->
+<section id="ABOUT" class="_about allMenu">
+		<div class="about-box">
+				
+				<div class="slideshow">
+							<img class="mySlides slide" src="image/about4.jpg">
+  				 		<img class="mySlides slide" src="image/about6.jpg">
+  				 		<img class="mySlides slide" src="image/about1.jpg">							
+				</div>
+				<br>
+				<div class="about-box-in">
+						<h3 id="about-headings">Tentang kami -- Putri Angkasa</h3>
+						<div id="about-text-progress"></div>
+				<div id="about-content" class="about-content" onscroll="aboutTextScroll()">
+						<p class="about-text">
+								Tempor per evertitur voluptaria iudicabit unum recteque atqui indoctum has persius postea dicunt molestie ad libris sagittis persius sadipscing voluptatibus potenti invidunt maximus efficitur iusto verear aenean invenire ac quam.</p>
+						<p class="about-text">
+								Conubia dico salutatus justo necessitatibus definitiones intellegat litora postea dolorem nonumy suspendisse fugit necessitatibus homero error sale hendrerit posuere tale constituam suscipit vero sapien cubilia definitionem ancillae.</p>
+						<p class="about-text">
+								Iriure posidonium fuisset qui vituperata sale equidem sapien interpretaris audire tacimates faucibus condimentum habitasse curae ludus vitae evertitur solum mel urna tortor mauris sea nonumes neglegentur cursus verterem splendide inciderint dapibus aliquam cum maluisset porro odio elaboraret ullamcorper eruditi consectetuer himenaeos conceptam tation est usu.</p>
+					<p class="about-text">
+							Suscipit adipiscing natum tale eruditi aliquid recteque recteque cras habeo ancillae tacimates nostra tortor expetenda convenire omittantur amet eius dolores dissentiunt gloriatur natoque libris erat quo consectetur mediocritatem pertinacia error integer efficitur nominavi eum fusce.</p>
+					<span class="about-footer">
+							-- putri angkasa (1990)</span>
+				</div>
+			</div>
+		</div>
+</section>
+
+<div class="quotes">
+		
+</div>
+
+
+
+<!-- -------------- Menu ------------- -->
+<section id="MENU" class="_menu allMenu">
+  <div class="menu-box">
+  		
+    <div class="menu-headings">
+				<h2>	 MENU </h2>
+					<p class="menu-heading-text">
+								" Varius periculis dictumst quot quis tale possit alienum iuvaret laudem option."</p>
+    </div>
+    
+    <div class="menu-content">
+    		
+				<div id="menu-tab-button" class="menu-tab-button">
+					 <button id="semua-button" class="semua-button" onclick="menu('semua', this)" >Semua</button>|
+					 
+					 <button class="vip-button" onclick="menu('vip', this)" >VIP</button>|
+					 
+					 <button class="ekonomi-button" onclick="menu('ekonomi', this)" >Ekonomi</button>
+					 <br>
+					 <label id="menu-to-top"><a href="#MENU"><i class="fas fa-chevron-up"></i></a></label>
+				</div>
+				
+				<!-- <div class="menu-tab-keterangan">
+						<p>
+							" Altera esse mel qualisque nisl torquent verterem."
+						</p>
+				</div> -->
+						
+<div class="menu-list-content">
+		
+		<!-- card box -->
+		<div class="card-box" data-menu="ekonomi">
+				<div class="card">
+						<div class="card-img">
+								<img src="image/food/Food1.jpg" alt="">
+								<div class="card-desc">
+										<p>Ayam Geprek berkualitas, dari ayam pilihan, dengan 5 tingkat kepedasan</p>
+								</div>								
+								<div class="card-price">
+										<h4>Rp. 40.000,-</h4>
+								</div>								
+						</div> <!-- card image -->						
+						<div class="card-name">
+								<p>Ayam Geprek</p>
+						</div>
+				</div> <!-- card -->
+		</div> <!-- card box -->
+		
+		<!-- card box -->
+		<div class="card-box" data-menu="vip">
+				<div class="card">
+						<div class="card-img">
+								<img src="image/food/Food2.jpg" alt="">
+								<div class="card-desc">
+										<p>massa eloquentiam repudiare menandri aliquip atqui instructior dolor viderer quidam quaeque vim decore aliquid ultrices</p>
+								</div>								
+								<div class="card-price">
+										<h4>Rp. 55.000,-</h4>
+								</div>								
+						</div> <!-- card image -->						
+						<div class="card-name">
+								<p>alia netus</p>
+						</div>
+				</div> <!-- card -->
+		</div> <!-- card box -->
+		
+				<!-- card box -->
+		<div class="card-box" data-menu="vip">
+				<div class="card">
+						<div class="card-img">
+								<img src="image/food/Food3.jpg" alt="">
+								<div class="card-desc">
+										<p>vix vix mutat mucius rhoncus dolorem erat libero impetus imperdiet doctus ne</p>
+								</div>								
+								<div class="card-price">
+										<h4>Rp. 100.000,-</h4>
+								</div>								
+						</div> <!-- card image -->						
+						<div class="card-name">
+								<p>expetenda mutat</p>
+						</div>
+				</div> <!-- card -->
+		</div> <!-- card box -->
+
+
+		<!-- card box -->
+		<div class="card-box" data-menu="ekonomi">
+				<div class="card">
+						<div class="card-img">
+								<img src="image/food/Food4.jpg" alt="">
+								<div class="card-desc">
+										<p>in scripserit constituto suavitate euismod theophrastus graecis mutat conclusionemque ius nullam ipsum aperiri civibus qualisque vel</p>
+								</div>								
+								<div class="card-price">
+										<h4>Rp. 10.000,-</h4>
+								</div>								
+						</div> <!-- card image -->						
+						<div class="card-name">
+								<p>error appareat</p>
+						</div>
+				</div> <!-- card -->
+		</div> <!-- card box -->
+
+
+		<!-- card box -->
+		<div class="card-box" data-menu="ekonomi">
+				<div class="card">
+						<div class="card-img">
+								<img src="image/food/Food5.jpg" alt="">
+								<div class="card-desc">
+										<p>ponderum dui definitionem dicit dissentiunt offendit utinam dui voluptatibus porta himenaeos ocurreret neglegentur phasellus graecis decore scripserit quisque facilisi omittantur</p>
+								</div>								
+								<div class="card-price">
+										<h4>Rp. 80.000,-</h4>
+								</div>								
+						</div> <!-- card image -->						
+						<div class="card-name">
+								<p>consul nonumy</p>
+						</div>
+				</div> <!-- card -->
+		</div> <!-- card box -->
+
+
+		<!-- card box -->
+		<div class="card-box" data-menu="ekonomi">
+				<div class="card">
+						<div class="card-img">
+								<img src="image/food/Food6.jpg" alt="">
+								<div class="card-desc">
+										<p>persecuti singulis noster vero usu brute sumo cu honestatis aeque</p>
+								</div>								
+								<div class="card-price">
+										<h4>Rp. 20.000,-</h4>
+								</div>								
+						</div> <!-- card image -->						
+						<div class="card-name">
+								<p>feugait doming</p>
+						</div>
+				</div> <!-- card -->
+		</div> <!-- card box -->
+
+
+		<!-- card box -->
+		<div class="card-box" data-menu="vip">
+				<div class="card">
+						<div class="card-img">
+								<img src="image/food/Food7.jpg" alt="">
+								<div class="card-desc">
+										<p>interpretaris indoctum option conceptam vehicula quaerendum dignissim fusce quod libris maiorum justo aeque causae</p>
+								</div>								
+								<div class="card-price">
+										<h4>Rp. 30.000,-</h4>
+								</div>								
+						</div> <!-- card image -->						
+						<div class="card-name">
+								<p>mediocrem vituperatoribus</p>
+						</div>
+				</div> <!-- card -->
+		</div> <!-- card box -->
+
+
+		<!-- card box -->
+		<div class="card-box" data-menu="ekonomi">
+				<div class="card">
+						<div class="card-img">
+								<img src="image/food/Food8.jpg" alt="">
+								<div class="card-desc">
+										<p>pro constituto ipsum verear adipiscing an volumus tempor dicant epicuri porttitor</p>
+								</div>								
+								<div class="card-price">
+										<h4>Rp. 40.000,-</h4>
+								</div>								
+						</div> <!-- card image -->						
+						<div class="card-name">
+								<p>gubergren curabitur</p>
+						</div>
+				</div> <!-- card -->
+		</div> <!-- card box -->
+
+
+		<!-- card box -->
+		<div class="card-box" data-menu="vip">
+				<div class="card">
+						<div class="card-img">
+								<img src="image/food/Food9.jpg" alt="">
+								<div class="card-desc">
+										<p>proin interesset ultrices iisque imperdiet te iaculis magnis tractatos faucibus facilisis consectetur</p>
+								</div>								
+								<div class="card-price">
+										<h4>Rp. 170.000,-</h4>
+								</div>								
+						</div> <!-- card image -->						
+						<div class="card-name">
+								<p>oratio adversarium</p>
+						</div>
+				</div> <!-- card -->
+		</div> <!-- card box -->
+
+
+		<!-- card box -->
+		<div class="card-box" data-menu="vip">
+				<div class="card">
+						<div class="card-img">
+								<img src="image/food/Food10.jpg" alt="">
+								<div class="card-desc">
+										<p>platea sed vestibulum facilisis definiebas his ei propriae urbanitas ultricies dolorem aperiri in ligula ei odio movet animal erat pro</p>
+								</div>								
+								<div class="card-price">
+										<h4>Rp. 40.000,-</h4>
+								</div>								
+						</div> <!-- card image -->						
+						<div class="card-name">
+								<p>labores singulis</p>
+						</div>
+				</div> <!-- card -->
+		</div> <!-- card box -->
+
+
+		<!-- card box -->
+		<div class="card-box" data-menu="vip">
+				<div class="card">
+						<div class="card-img">
+								<img src="image/food/Food1.jpg" alt="">
+								<div class="card-desc">
+										<p>epicurei netus decore efficiantur voluptatum elitr splendide maiestatis adhuc</p>
+								</div>								
+								<div class="card-price">
+										<h4>Rp. 107.000,-</h4>
+								</div>								
+						</div> <!-- card image -->						
+						<div class="card-name">
+								<p>alia proin</p>
+						</div>
+				</div> <!-- card -->
+		</div> <!-- card box -->
+
+
+		<!-- card box -->
+		<div class="card-box" data-menu="vip">
+				<div class="card">
+						<div class="card-img">
+								<img src="image/food/Food2.jpg" alt="">
+								<div class="card-desc">
+										<p>iusto hinc nominavi nisl consectetuer porttitor intellegebat fuisset postulant viderer senserit iusto usu elitr ad facilisi fugit</p>
+								</div>								
+								<div class="card-price">
+										<h4>Rp. 40.000,-</h4>
+								</div>								
+						</div> <!-- card image -->						
+						<div class="card-name">
+								<p>vis cubilia</p>
+						</div>
+				</div> <!-- card -->
+		</div> <!-- card box -->
+
+
+		<!-- card box -->
+		<div class="card-box" data-menu="ekonomi">
+				<div class="card">
+						<div class="card-img">
+								<img src="image/food/Food3.jpg" alt="">
+								<div class="card-desc">
+										<p>mediocrem docendi persecuti ornatus taciti splendide a necessitatibus dictas</p>
+								</div>								
+								<div class="card-price">
+										<h4>Rp. 20.000,-</h4>
+								</div>								
+						</div> <!-- card image -->						
+						<div class="card-name">
+								<p>error eget</p>
+						</div>
+				</div> <!-- card -->
+		</div> <!-- card box -->
+
+
+		<!-- card box -->
+		<div class="card-box" data-menu="ekonomi">
+				<div class="card">
+						<div class="card-img">
+								<img src="image/food/Food4.jpg" alt="">
+								<div class="card-desc">
+										<p>repudiandae consul vim salutatus quaerendum harum populo curae nonumy facilis consectetur molestie posidonium inani nisi tortor sadipscingn</p>
+								</div>								
+								<div class="card-price">
+										<h4>Rp. 19.000,-</h4>
+								</div>								
+						</div> <!-- card image -->						
+						<div class="card-name">
+								<p>facilisi ornatus</p>
+						</div>
+				</div> <!-- card -->
+		</div> <!-- card box -->
+
+
+		<!-- card box -->
+		<div class="card-box" data-menu="ekonomi">
+				<div class="card">
+						<div class="card-img">
+								<img src="image/food/Food5.jpg" alt="">
+								<div class="card-desc">
+										<p>appareat nec efficiantur no errem litora</p>
+								</div>								
+								<div class="card-price">
+										<h4>Rp. 30.000,-</h4>
+								</div>								
+						</div> <!-- card image -->						
+						<div class="card-name">
+								<p>fugit alienum</p>
+						</div>
+				</div> <!-- card -->
+		</div> <!-- card box -->
+
+
+		<!-- card box -->
+		<div class="card-box" data-menu="vip">
+				<div class="card">
+						<div class="card-img">
+								<img src="image/food/Food6.jpg" alt="">
+								<div class="card-desc">
+										<p>quaestio deseruisse ex suavitate ancillae nisi conubia integer eleifend iisque qui</p>
+								</div>								
+								<div class="card-price">
+										<h4>Rp. 40.000,-</h4>
+								</div>								
+						</div> <!-- card image -->						
+						<div class="card-name">
+								<p>no ignota</p>
+						</div>
+				</div> <!-- card -->
+		</div> <!-- card box -->
+
+
+		<!-- card box -->
+		<div class="card-box" data-menu="ekonomi">
+				<div class="card">
+						<div class="card-img">
+								<img src="image/food/Food6.jpg" alt="">
+								<div class="card-desc">
+										<p>tantas invenire patrioque dissentiunt vituperatoribus non regione risus aliquip magnis ut commune cursus</p>
+								</div>								
+								<div class="card-price">
+										<h4>Rp. 19.000,-</h4>
+								</div>								
+						</div> <!-- card image -->						
+						<div class="card-name">
+								<p>at legere ipsum minim</p>
+						</div>
+				</div> <!-- card -->
+		</div> <!-- card box -->
+
+
+		<!-- card box -->
+		<div class="card-box" data-menu="ekonomi">
+				<div class="card">
+						<div class="card-img">
+								<img src="image/food/Food7.jpg" alt="">
+								<div class="card-desc">
+										<p>fermentum mnesarchum nostra tristique menandri semper vocent litora natum omittantur dico urbanitas</p>
+								</div>								
+								<div class="card-price">
+										<h4>Rp. 40.000,-</h4>
+								</div>								
+						</div> <!-- card image -->						
+						<div class="card-name">
+								<p>placerat facilisi solet</p>
+						</div>
+				</div> <!-- card -->
+		</div> <!-- card box -->
+
+
+		<!-- card box -->
+		<div class="card-box" data-menu="vip">
+				<div class="card">
+						<div class="card-img">
+								<img src="image/food/Food8.jpg" alt="">
+								<div class="card-desc">
+										<p>altera bibendum prompta in cu dolor propriae quaerendum legere efficiantur</p>
+								</div>								
+								<div class="card-price">
+										<h4>Rp. 200.000,-</h4>
+								</div>								
+						</div> <!-- card image -->						
+						<div class="card-name">
+								<p>delectus interdum invenire</p>
+						</div>
+				</div> <!-- card -->
+		</div> <!-- card box -->
+
+
+		<!-- card box -->
+		<div class="card-box" data-menu="vip">
+				<div class="card">
+						<div class="card-img">
+								<img src="image/food/Food9.jpg" alt="">
+								<div class="card-desc">
+										<p>cras delectus signiferumque non assueverit vituperata fastidii recteque molestiae lobortis fastidii consequat dicta ullamcorper</p>
+								</div>								
+								<div class="card-price">
+										<h4>Rp. 190.000,-</h4>
+								</div>								
+						</div> <!-- card image -->						
+						<div class="card-name">
+								<p>erat quod propriae docendi</p>
+						</div>
+				</div> <!-- card -->
+		</div> <!-- card box -->
+
+
+		<!-- card box -->
+		<div class="card-box" data-menu="vip">
+				<div class="card">
+						<div class="card-img">
+								<img src="image/food/Food10.jpg" alt="">
+								<div class="card-desc">
+										<p>his dicit convallis eos unum ea errem quot natum sanctus minim libero arcu elit pericula quaeque fabellas ocurreret perpetua deserunt</p>
+								</div>								
+								<div class="card-price">
+										<h4>Rp. 200.000,-</h4>
+								</div>								
+						</div> <!-- card image -->						
+						<div class="card-name">
+								<p>ei vitae mollis</p>
+						</div>
+				</div> <!-- card -->
+		</div> <!-- card box -->
+
+<!-- card box -->
+		<div class="card-box" data-menu="vip">
+				<div class="card">
+						<div class="card-img">
+								<img src="image/food/Food4.jpg" alt="">
+								<div class="card-desc">
+										<p>his dicit convallis eos unum ea errem quot natum sanctus minim libero arcu elit pericula quaeque fabellas ocurreret perpetua deserunt dictum integer ridens tota wisi sodales elitr graeco ex lacus</p>
+								</div>								
+								<div class="card-price">
+										<h4>Rp. 200.000,-</h4>
+								</div>								
+						</div> <!-- card image -->						
+						<div class="card-name">
+								<p>verear partiendo eam ultricies</p>
+						</div>
+				</div> <!-- card -->
+		</div> <!-- card box -->
+
+
+</div>
+						
+		</div>
+  </div>
+</section>
+
+<section id="SERVICE" class="_service allMenu">
+		
+
+</section>
+
+
+
+
+
+<footer id="footer" class="_footer allMenu">
+		
+</footer>
+
+
+
+
+<div class="waves">
+		<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+<defs>
+<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+</defs>
+<g class="parallax">
+<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+</g>
+</svg>
+</div>
+
+<a id="backToTop" href="#"><i class="fas fa-paper-plane"></i></a>
+
+<div id="window-progress"></div>
+
+<script src="js/main.js"></script>
+<script src="js/onscroll-nav.js"></script>
+<script>
+		window.addEventListener('scroll', () => { document.body.style.setProperty('nilaiScroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight)); }, false);
+</script>
+
+<script></script>
+
+<script></script>
+
+</body>
+</html>
